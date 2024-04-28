@@ -7,7 +7,7 @@ RUN apk add --no-cache git && \
     go mod download && \
     CGO_ENABLED=0 go build -ldflags="-s -w" -o "webdav-server"
 
-FROM alpine:3.18.3
+FROM alpine:3.19.1
 
 WORKDIR /
 
